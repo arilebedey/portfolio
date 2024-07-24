@@ -1,3 +1,21 @@
+<!-- ![image](Current-work.png) -->
+
+## Run the project
+
+`git clone git@github.com:arilebedey/portfolio.git`
+
+`cd portfolio`
+
+`npm install vite`
+
+`npm run dev`
+
+## Notes
+
+💪
+
+## Vite README
+
 Mock work: Portfolio Project
 
 # React + TypeScript + Vite

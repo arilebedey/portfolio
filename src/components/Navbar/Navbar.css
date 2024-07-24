@@ -1,7 +1,15 @@
-.nav {
+/* Navbar.css */
+
+.navbar {
+  margin: 30px 50px 30px;
   display: flex;
-  color: white;
-  font-size: 100;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-end;
+}
+
+.navbar * {
+  color: var(--primary-color);
+  font-size: 18px;
+  text-decoration: none;
+  padding: 0px 30px;
 }

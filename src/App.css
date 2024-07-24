@@ -6,6 +6,8 @@
   --background-color: #000414;
   --header-color: #cfcfcf;
   min-width: 500px;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 @font-face {

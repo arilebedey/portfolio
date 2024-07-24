@@ -1,0 +1,65 @@
+/* HeroSection.css */
+
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  outline: 3px solid plum;
+}
+
+/* LEFT DIV */
+.hero-left {
+  flex: 1;
+  text-align: left;
+  position: relative;
+  outline: 3px solid plum;
+}
+
+/* LEFT DIV - HERO TITLE */
+.hero-title {
+  display: flex;
+  flex-direction: column;
+  font-size: 75px;
+  margin-left: 80px;
+  /* padding: 0 0 0 80px; */
+}
+
+.hero-title-top {
+  outline: 3px solid plum;
+  width: 300px;
+}
+
+.hero-title-bottom {
+  outline: 3px solid plum;
+  width: 300px;
+  padding: 0 0 0 200px;
+}
+
+.hero-name {
+  color: var(--header-color);
+}
+
+.hero-dash {
+  color: var(--primary-color);
+}
+
+/* RIGHT DIV */
+.hero-right {
+  flex: 1;
+  text-align: right;
+  position: relative;
+  outline: 3px solid plum;
+  font-size: 75px;
+}
+
+.date {
+  margin-right: 80px;
+}
+
+.date-color-1 {
+  color: var(--header-color);
+}
+
+.date-color-2 {
+  color: var(--primary-color);
+}
