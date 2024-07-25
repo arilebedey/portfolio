@@ -4,7 +4,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  outline: 3px solid plum;
 }
 
 /* LEFT DIV */
@@ -12,7 +11,6 @@
   flex: 1;
   text-align: left;
   position: relative;
-  outline: 3px solid plum;
 }
 
 /* LEFT DIV - HERO TITLE */
@@ -25,14 +23,13 @@
 }
 
 .hero-title-top {
-  outline: 3px solid plum;
   width: 300px;
+  margin-bottom: -50px;
 }
 
 .hero-title-bottom {
-  outline: 3px solid plum;
   width: 300px;
-  padding: 0 0 0 200px;
+  padding: 0 0 0 165px;
 }
 
 .hero-name {
@@ -48,7 +45,6 @@
   flex: 1;
   text-align: right;
   position: relative;
-  outline: 3px solid plum;
   font-size: 75px;
 }
 
