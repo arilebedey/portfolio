@@ -8,6 +8,8 @@
   min-width: 500px;
   max-width: 1600px;
   margin: 0 auto;
+  /* NOTE: debug height setting!! */
+  height: 400%;
 }
 
 @font-face {
@@ -42,6 +44,21 @@ body {
     flex-direction: row;
     gap: 20px;
     margin: 10px;
-    /* padding: 10px 10px 10px 10px; */
   }
+}
+
+.line-left {
+  position: absolute;
+  left: 0;
+  width: 16vw;
+  height: 1px;
+  background-color: orange;
+}
+
+.line-right {
+  position: absolute;
+  right: 0;
+  width: 16vw;
+  height: 1px;
+  background-color: orange;
 }
