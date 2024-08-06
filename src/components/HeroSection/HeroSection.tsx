@@ -2,6 +2,7 @@
 
 import React from "react";
 import "./HeroSection.css";
+import dolphinImage from "./dolphin.webp";
 
 const HeroSection: React.FC = () => {
   return (
@@ -26,6 +27,12 @@ const HeroSection: React.FC = () => {
           <span className="date-color-1">20</span>
           <span className="date-color-2">24</span>
         </div>
+        <figure className="bio-card">
+          <img src={dolphinImage} alt="A Dolphin" className="bio-image" />
+          <div className="bio-image-name-container">
+            <figcaption className="bio-image-name">GOLDEN PLAYER</figcaption>
+          </div>
+        </figure>
       </div>
     </div>
   );
