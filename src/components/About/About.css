@@ -1,0 +1,29 @@
+.about-container {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+.about-title {
+  color: var(--primary-color);
+  font-size: 2.2rem;
+  padding: 50px;
+}
+
+.about-text {
+  font-family: "Play", sans-serif;
+  color: var(--secondary-color);
+  font-size: 1.8rem;
+  font-weight: 500;
+  max-width: 60rem;
+  text-align: center;
+  line-height: 1.2em;
+  word-spacing: 8px;
+  margin-bottom: 250px;
+}
+
+.line {
+  top: 1250px;
+}
