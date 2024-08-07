@@ -1,10 +1,30 @@
 // src/components/HeroSection/HeroSection.tsx
 
-import React from "react";
+import React, { useState } from "react";
 import "./HeroSection.css";
-import dolphinImage from "./dolphin.webp";
+import dolphinImage from "./dolphin2.webp";
 
 const HeroSection: React.FC = () => {
+  const [emailCopied, setEmailCopied] = useState(false);
+  const [phoneCopied, setPhoneCopied] = useState(false);
+
+  const copyToClipboard = (text: string, type: string) => {
+    navigator.clipboard.writeText(text).then(
+      () => {
+        if (type === "email") {
+          setEmailCopied(true);
+          setTimeout(() => setEmailCopied(false), 2000);
+        } else if (type === "phone") {
+          setPhoneCopied(true);
+          setTimeout(() => setPhoneCopied(false), 2000);
+        }
+      },
+      (err) => {
+        console.error("Failed to copy: ", err);
+      },
+    );
+  };
+
   return (
     <div className="hero-section">
       <div className="hero-left">
@@ -20,9 +40,27 @@ const HeroSection: React.FC = () => {
             </div>
           </div>
         </header>
+        <div className="hero-description">
+          <span className="hero-description-top">FRONTEND DEVELOPER</span>
+          <span className="hero-description-bottom">PORTFOLIO WEBSITE</span>
+        </div>
+        <div className="contacts">
+          <div className="contact-item">
+            <button onClick={() => copyToClipboard("google@mail.ru", "email")}>
+              google@mail.ru
+            </button>
+            {emailCopied && <span className="copied-text">Copied!</span>}
+          </div>
+          <div className="contact-item 2">
+            <button onClick={() => copyToClipboard("+8888888888", "phone")}>
+              +888-888-88-88
+            </button>
+            {phoneCopied && <span className="copied-text">Copied!</span>}
+          </div>
+        </div>
       </div>
       <div className="hero-right">
-        <div className="line-right"></div>
+        <div className="line-right first-line"></div>
         <div className="date">
           <span className="date-color-1">20</span>
           <span className="date-color-2">24</span>
@@ -30,9 +68,10 @@ const HeroSection: React.FC = () => {
         <figure className="bio-card">
           <img className="bio-image" src={dolphinImage} alt="A Dolphin" />
           <div className="bio-image-name-container">
-            <figcaption className="bio-image-name">GOLDEN PLAYER</figcaption>
+            <figcaption className="bio-image-name">GOLDEN DEV</figcaption>
           </div>
         </figure>
+        <div className="line-right second-line"></div>
       </div>
     </div>
   );

@@ -9,7 +9,8 @@
 
 .navbar * {
   color: var(--primary-color);
-  font-size: 18px;
+  font-family: "Play", sans-serif;
+  font-size: 1.25rem;
   text-decoration: none;
   padding: 0px 30px;
 }
