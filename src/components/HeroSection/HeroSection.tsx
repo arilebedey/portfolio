@@ -28,7 +28,7 @@ const HeroSection: React.FC = () => {
           <span className="date-color-2">24</span>
         </div>
         <figure className="bio-card">
-          <img src={dolphinImage} alt="A Dolphin" className="bio-image" />
+          <img className="bio-image" src={dolphinImage} alt="A Dolphin" />
           <div className="bio-image-name-container">
             <figcaption className="bio-image-name">GOLDEN PLAYER</figcaption>
           </div>

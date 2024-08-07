@@ -8,8 +8,10 @@
 
 /* LEFT DIV */
 .hero-left {
-  flex: 1;
-  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* flex: 1; */
   padding: 85px 0 0 0;
 }
 
@@ -41,11 +43,15 @@
 
 /* RIGHT DIV */
 .hero-right {
-  flex: 1;
-  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  /* flex: 1; */
   font-size: 75px;
 }
 
+.hero-right > * {
+}
 .date {
   margin-right: 80px;
 }
@@ -60,29 +66,27 @@
 
 .bio-card {
   position: relative;
-  display: inline-block;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 330px;
   margin-top: 40px;
   margin-right: 100px;
-  /* margin: 0; */
 }
 
 .bio-image {
-  display: block;
-  max-width: 350px;
+  width: 100%;
   border-radius: 10px;
 }
 
 .bio-image-name-container {
+  bottom: -15px;
   position: absolute;
-  bottom: 10px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
 }
 
 .bio-image-name {
-  display: inline-block;
-  padding: 0px 35px;
+  display: inline;
+  padding: 5px 35px;
   background: rgba(0, 0, 0, 0.9);
   border-radius: 5px;
   font-size: 1rem;
