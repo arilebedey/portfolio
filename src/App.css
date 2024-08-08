@@ -7,8 +7,6 @@
   --background-color: #000414;
   --header-color: #cfcfcf;
   --line-color: #ff5a5a;
-  min-width: 800px;
-  max-width: 1600px;
   margin: 0 auto;
 }
 
@@ -22,14 +20,15 @@
 body {
   background-color: var(--background-color);
   font-family: Valorant, sans-serif;
-  line-height: 1.6; /* Improve readability */
+  line-height: 1.6;
+  outline: 2px solid plum;
 }
 
 @media (max-width: 1124px) {
 }
 
 @media (max-width: 768px) {
-  .navbar-links {
+  .navbar * {
     display: none;
   }
 

@@ -1,15 +1,23 @@
 .about-container {
+  position: relative;
+}
+
+.about {
   padding: 50px;
+  width: 100%;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   flex-direction: column;
-  justify-items: center;
   align-items: center;
 }
 
 .about-title {
+  box-sizing: border-box;
   color: var(--primary-color);
   font-size: 2.2rem;
-  padding: 50px;
+  margin-top: 90px;
 }
 
 .about-text {
@@ -21,9 +29,11 @@
   text-align: center;
   line-height: 1.2em;
   word-spacing: 8px;
+  margin-top: 30px;
   margin-bottom: 250px;
 }
 
 .line {
-  top: 1250px;
+  position: absolute;
+  top: 650px;
 }

@@ -1,7 +1,3 @@
-<!-- ![image](Current-work.png) -->
-
-https://chatgpt.com/c/995b01c8-2db4-4d14-ad83-a42492a57e53
-
 ## Run the project
 
 `git clone git@github.com:arilebedey/portfolio.git`
