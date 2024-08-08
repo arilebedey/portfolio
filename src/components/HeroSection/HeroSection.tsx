@@ -29,7 +29,7 @@ const HeroSection: React.FC = () => {
     <div className="hero-container">
       <div className="hero-section">
         <div className="hero-left">
-          <div className="line-left"></div>
+          <div className="line-left hero-line"></div>
           <header>
             <div className="hero-title">
               <div className="hero-title-top">
@@ -74,7 +74,6 @@ const HeroSection: React.FC = () => {
               <figcaption className="bio-image-name">GOLDEN DEV</figcaption>
             </div>
           </figure>
-          <div className="line-right second-line"></div>
         </div>
       </div>
     </div>

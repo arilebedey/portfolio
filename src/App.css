@@ -7,6 +7,8 @@
   --background-color: #000414;
   --header-color: #cfcfcf;
   --line-color: #ff5a5a;
+  --text-color: #2c2c2c;
+  --button-color: #ff4242;
   margin: 0 auto;
 }
 
@@ -21,7 +23,6 @@ body {
   background-color: var(--background-color);
   font-family: Valorant, sans-serif;
   line-height: 1.6;
-  outline: 2px solid plum;
 }
 
 @media (max-width: 1124px) {
@@ -42,7 +43,6 @@ body {
 
 .line-left {
   position: absolute;
-  top: 150px;
   left: 0;
   width: 25vw;
   max-width: 450px;

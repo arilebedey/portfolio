@@ -1,0 +1,146 @@
+.vision-container {
+  position: relative;
+}
+
+.vision {
+  max-width: 1600px;
+  width: 100%;
+  height: 80rem;
+  background-color: #000000;
+  background-color: #d9d9d9;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 30px;
+}
+
+.vision-title {
+  box-sizing: border-box;
+  color: var(--primary-color);
+  font-size: 2.2rem;
+  padding-top: 50px;
+  padding-bottom: 72px;
+}
+
+.vision-line {
+  top: 100px;
+}
+
+.reqs-and-res {
+  display: flex;
+  flex-direction: column;
+}
+
+.technologies {
+  display: flex;
+  flex-direction: column;
+}
+
+.two-detail-blocks {
+  display: flex;
+  justify-content: space-between;
+}
+
+.implementation {
+  display: flex;
+  flex-direction: column;
+}
+
+.wireframing {
+  display: flex;
+  flex-direction: column;
+}
+
+.testing {
+  display: flex;
+  flex-direction: column;
+}
+
+.vision-button {
+  background-color: var(--button-color);
+  color: whitesmoke;
+  text-transform: uppercase;
+  font-family: "Play", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  padding: 22px 36px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 35px;
+  box-shadow:
+    0 0 0 8px #d9d9d9,
+    0 0 0 9px var(--button-color);
+  width: 23em;
+}
+
+.vision-text-block {
+  display: flex;
+  font-family: "Play", sans-serif;
+  color: var(--text-color);
+  font-size: 1.6rem;
+  font-weight: 500;
+  max-width: 80rem;
+  text-align: center;
+  line-height: 0.1rem;
+  letter-spacing: 0.17rem;
+  word-spacing: 0.35rem;
+  line-height: 1.7rem;
+  padding-bottom: 55px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.vision-text-block-double {
+  max-width: 33rem;
+  display: flex;
+  font-family: "Play", sans-serif;
+  color: var(--text-color);
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-align: center;
+  line-height: 0.1rem;
+  letter-spacing: 0.17rem;
+  word-spacing: 0.35rem;
+  line-height: 1.7rem;
+  padding-bottom: 55px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* NOTE: IMAGES PNG */
+
+.images-container {
+  position: absolute;
+  max-width: 1600px;
+  width: 100%;
+  height: 80rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.wolf-image {
+  position: absolute;
+  width: 190px;
+  right: 0;
+  top: 5px;
+}
+
+.fire-image {
+  position: absolute;
+  width: 120px;
+  right: 0;
+  bottom: 5px;
+}
+
+.face-image {
+  position: absolute;
+  width: 190px;
+  left: 0;
+  bottom: 5px;
+}

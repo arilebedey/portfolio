@@ -3,7 +3,6 @@
 }
 
 .about {
-  padding: 50px;
   width: 100%;
   max-width: 1600px;
   margin-left: auto;
@@ -11,18 +10,19 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-block: 5px;
 }
 
 .about-title {
   box-sizing: border-box;
   color: var(--primary-color);
   font-size: 2.2rem;
-  margin-top: 90px;
+  margin-top: 120px;
 }
 
 .about-text {
   font-family: "Play", sans-serif;
-  color: var(--secondary-color);
+  color: var(--header-color);
   font-size: 1.8rem;
   font-weight: 500;
   max-width: 60rem;
@@ -30,10 +30,13 @@
   line-height: 1.2em;
   word-spacing: 8px;
   margin-top: 30px;
-  margin-bottom: 250px;
+  margin-bottom: 450px;
 }
 
-.line {
-  position: absolute;
-  top: 650px;
+.about-line-left {
+  bottom: 100px;
+}
+
+.about-line-right {
+  top: 100px;
 }

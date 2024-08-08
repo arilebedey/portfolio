@@ -3,7 +3,8 @@ import "./App.css";
 
 import Navbar from "./components/Navbar/Navbar";
 import HeroSection from "./components/HeroSection/HeroSection";
-import { About } from "./components/About/About";
+import About from "./components/About/About";
+import Vision from "./components/Vision/Vision";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Navbar />
       <HeroSection />
       <About />
+      <Vision />
     </>
   );
 }

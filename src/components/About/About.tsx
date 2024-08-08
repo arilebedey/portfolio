@@ -1,10 +1,11 @@
 import React from "react";
 import "./About.css";
 
-export const About: React.FC = () => {
+const About: React.FC = () => {
   return (
     <div className="about-container">
       <div className="about">
+        <div className="line-right about-line-right"></div>
         <div className="about-title">ABOUT</div>
         <article className="about-text">
           Frontend Developer with 6 years of commercial experience. Experienced
@@ -13,8 +14,10 @@ export const About: React.FC = () => {
           designing and implementing high-performance, scalable, and
           maintainable web applications.
         </article>
-        <div className="line-left line"></div>
+        <div className="line-left about-line-left"></div>
       </div>
     </div>
   );
 };
+
+export default About;
