@@ -7,13 +7,13 @@ import faceImage from "./face.png";
 const Vision: React.FC = () => {
   return (
     <div className="vision-container">
-      <div className="images-container">
-        <img src={wolfImage} alt="" className="wolf-image" />
-        <img src={fireImage} alt="" className="fire-image" />
-        <img src={faceImage} alt="" className="face-image" />
-      </div>
+      <div className="line-left vision-line"></div>
       <div className="vision">
-        <div className="line-left vision-line"></div>
+        <div className="images-container">
+          <img src={wolfImage} alt="" className="wolf-image" />
+          <img src={fireImage} alt="" className="fire-image" />
+          <img src={faceImage} alt="" className="face-image" />
+        </div>
         <div className="vision-title">Vision and approach</div>
         <div className="vision-details">
           <div className="reqs-and-res">

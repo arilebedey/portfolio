@@ -3,9 +3,9 @@
 }
 
 .vision {
+  position: relative;
   max-width: 1600px;
   width: 100%;
-  height: 80rem;
   background-color: #000000;
   background-color: #d9d9d9;
   margin-left: auto;
@@ -28,12 +28,11 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  height: 450px;
   width: 430px;
   text-indent: -9999px; /* This hides the text while keeping it accessible for screen readers */
   cursor: pointer;
   padding-top: 50px;
-  padding-bottom: 72px;
+  padding-bottom: 102px;
   z-index: 1;
 }
 
@@ -43,6 +42,7 @@
 
 .vision-line {
   top: 100px;
+  z-index: 1;
 }
 
 .reqs-and-res {
@@ -130,15 +130,6 @@
 }
 
 /* NOTE: IMAGES PNG */
-
-.images-container {
-  position: absolute;
-  max-width: 1600px;
-  width: 100%;
-  height: 80rem;
-  left: 50%;
-  transform: translateX(-50%);
-}
 
 .wolf-image {
   position: absolute;
