@@ -3,6 +3,7 @@ import "./Vision.css";
 import wolfImage from "./wolf.png";
 import fireImage from "./fire.png";
 import faceImage from "./face.png";
+import ToysOutlinedIcon from "@mui/icons-material/ToysOutlined";
 
 const Vision: React.FC = () => {
   return (
@@ -14,7 +15,14 @@ const Vision: React.FC = () => {
           <img src={fireImage} alt="" className="fire-image" />
           <img src={faceImage} alt="" className="face-image" />
         </div>
-        <div className="vision-title">Vision and approach</div>
+        <div className="vision-title title">
+          <div className="vision-title-icon title-icon">
+            <ToysOutlinedIcon fontSize="large" />
+          </div>
+          <div className="vision-title-text title-text">
+            Vision and approach
+          </div>
+        </div>
         <div className="vision-details">
           <div className="reqs-and-res">
             <button className="vision-button">

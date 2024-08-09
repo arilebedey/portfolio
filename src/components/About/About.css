@@ -14,22 +14,6 @@
   margin-block: 5px;
 }
 
-.about-title {
-  background-image: url("./about.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  width: 200px;
-  height: 50px;
-  text-indent: -9999px; /* This hides the text while keeping it accessible for screen readers */
-  cursor: pointer;
-  margin-top: 220px;
-}
-
-.about-title:hover {
-  background-image: url("./about-hover.png");
-}
-
 .about-text {
   font-family: "Play", sans-serif;
   color: var(--header-color);
@@ -45,8 +29,21 @@
 
 .about-line-left {
   bottom: 100px;
+  max-width: 20px;
 }
 
 .about-line-right {
   top: 100px;
+}
+
+.about-title {
+  margin-top: 220px;
+}
+
+.about-title-icon {
+  color: whitesmoke;
+}
+
+.title:hover .about-title-icon {
+  color: #d0d0d0; /* Change the icon color when hovering over the title */
 }

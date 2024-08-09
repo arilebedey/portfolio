@@ -69,3 +69,34 @@ body {
   height: 2px;
   background-color: var(--line-color);
 }
+
+.title {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 72px;
+  cursor: pointer;
+  position: relative;
+}
+
+.title::after {
+  content: "";
+  position: absolute;
+  bottom: 7px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: var(--line-color);
+  transition: width 0.03s ease-in-out;
+}
+
+.title:hover::after {
+  width: 100%;
+}
+
+.title-text {
+  font-size: 2rem;
+  margin-left: 10px;
+  color: var(--primary-color);
+}

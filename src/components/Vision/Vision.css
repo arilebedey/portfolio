@@ -1,5 +1,6 @@
 .vision-container {
   position: relative;
+  background-color: #d9d9d9;
 }
 
 .vision {
@@ -14,23 +15,6 @@
   flex-direction: column;
   align-items: center;
   padding: 0 30px;
-}
-
-.vision-title {
-  background-image: url("./vision.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  width: 430px;
-  text-indent: -9999px; /* This hides the text while keeping it accessible for screen readers */
-  cursor: pointer;
-  padding-top: 50px;
-  padding-bottom: 102px;
-  z-index: 1;
-}
-
-.vision-title:hover {
-  background-image: url("./vision-hover.png");
 }
 
 .vision-line {
@@ -50,7 +34,8 @@
 
 .two-detail-blocks {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .implementation {
@@ -78,14 +63,13 @@
   text-decoration: none;
   outline: none;
   border: none;
-  padding: 22px 36px;
+  padding: 1.4rem 9.1rem;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 35px;
   box-shadow:
     0 0 0 8px #d9d9d9,
     0 0 0 9px var(--button-color);
-  width: 23em;
 }
 
 .vision-text-block {
@@ -143,4 +127,8 @@
   width: 190px;
   left: 0;
   bottom: 5px;
+}
+
+.title:hover .vision-title-icon {
+  color: #737373; /* Change the icon color when hovering over the title */
 }
