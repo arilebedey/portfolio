@@ -12,6 +12,15 @@
   margin: 0 auto;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+button {
+  outline: none;
+  border: none;
+}
+
 @font-face {
   font-family: "Valorant";
   src: url("./assets/fonts/Valorant Font.ttf") format("truetype");
