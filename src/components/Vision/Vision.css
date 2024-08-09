@@ -17,12 +17,28 @@
   padding: 0 30px;
 }
 
+/* .vision-title { */
+/*   box-sizing: border-box; */
+/*   color: var(--primary-color); */
+/*   font-size: 2.2rem; */
+/* } */
+
 .vision-title {
-  box-sizing: border-box;
-  color: var(--primary-color);
-  font-size: 2.2rem;
+  background-image: url("./vision.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 450px;
+  width: 430px;
+  text-indent: -9999px; /* This hides the text while keeping it accessible for screen readers */
+  cursor: pointer;
   padding-top: 50px;
   padding-bottom: 72px;
+  z-index: 1;
+}
+
+.vision-title:hover {
+  background-image: url("./vision-hover.png");
 }
 
 .vision-line {
