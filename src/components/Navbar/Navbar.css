@@ -1,7 +1,14 @@
 /* Navbar.css */
+.navbar-container {
+  position: sticky;
+  top: 0px;
+  width: 100%;
+  z-index: 6;
+  background-color: var(--background-color);
+}
 
 .navbar {
-  box-sizing: border-box;
+  position: relative;
   display: flex;
   justify-content: flex-end;
   width: 100%;
@@ -11,13 +18,13 @@
   margin-left: auto;
 }
 
-.navbar * {
+.navbar-links * {
   color: var(--primary-color);
   font-family: "Play", sans-serif;
   font-size: 1.25rem;
   text-decoration: none;
 }
 
-.navbar :not(:last-child) {
+.navbar-links :not(:last-child) {
   padding: 0px 30px;
 }
