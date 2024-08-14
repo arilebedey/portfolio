@@ -4,6 +4,7 @@ import wolfImage from "./wolf.png";
 import fireImage from "./fire.png";
 import faceImage from "./face.png";
 import ToysOutlinedIcon from "@mui/icons-material/ToysOutlined";
+import { SectionTitle } from "../../reusable-components/SectionTitle/SectionTitle";
 
 const Vision: React.FC = () => {
   return (
@@ -19,9 +20,7 @@ const Vision: React.FC = () => {
           <div className="vision-title-icon title-icon">
             <ToysOutlinedIcon fontSize="large" />
           </div>
-          <div className="vision-title-text title-text">
-            Vision and approach
-          </div>
+          <SectionTitle>Vision and approach</SectionTitle>
         </div>
         <div className="vision-details">
           <div className="reqs-and-res">

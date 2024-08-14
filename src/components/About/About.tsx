@@ -1,6 +1,7 @@
 import React from "react";
 import "./About.css";
 import ToysOutlinedIcon from "@mui/icons-material/ToysOutlined";
+import { SectionTitle } from "../../reusable-components/SectionTitle/SectionTitle";
 
 const About: React.FC = () => {
   return (
@@ -12,6 +13,7 @@ const About: React.FC = () => {
             <ToysOutlinedIcon fontSize="large" />
           </div>
           <div className="about-title-text title-text">About</div>
+          <SectionTitle>About</SectionTitle>
         </div>
         <article className="about-text">
           Frontend Developer with 6 years of commercial experience. Experienced
