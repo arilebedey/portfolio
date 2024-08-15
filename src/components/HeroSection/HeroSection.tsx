@@ -40,11 +40,11 @@ const HeroSection: React.FC = () => {
                 <span className="hero-name">FOLIO</span>
               </div>
             </div>
+            <div className="hero-description">
+              <span className="hero-description-top">FRONTEND DEVELOPER</span>
+              <span className="hero-description-bottom">PORTFOLIO WEBSITE</span>
+            </div>
           </header>
-          <div className="hero-description">
-            <span className="hero-description-top">FRONTEND DEVELOPER</span>
-            <span className="hero-description-bottom">PORTFOLIO WEBSITE</span>
-          </div>
           <div className="contacts">
             <div className="contact-item">
               <button

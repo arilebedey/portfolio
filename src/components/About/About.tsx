@@ -12,7 +12,6 @@ const About: React.FC = () => {
           <div className="about-title-icon title-icon">
             <ToysOutlinedIcon fontSize="large" />
           </div>
-          <div className="about-title-text title-text">About</div>
           <SectionTitle>About</SectionTitle>
         </div>
         <article className="about-text">
