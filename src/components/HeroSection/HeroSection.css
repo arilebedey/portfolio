@@ -117,7 +117,7 @@
 }
 
 .bio-card {
-  position: relative;
+  position: absolute;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -126,19 +126,44 @@
   margin-right: 20px;
 }
 
-.bio-image {
-  width: 100%;
+.bio-image-container {
+  width: 330px;
+  height: 280px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px;
+  transition:
+    transform 0.1s ease,
+    height 0.1s ease;
+  transform-origin: top;
+  top: 190px;
+}
+
+.bio-image-container:hover {
+  height: 330px;
+  transform: translateY(-50px);
   border-radius: 10px;
 }
 
-.bio-image-name-container {
-  bottom: -15px;
+.bio-image {
+  height: auto;
+  width: 100%;
+  bottom: 0;
   position: absolute;
+}
+
+.bio-image-name-container {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -30px;
+  width: auto;
+  white-space: nowrap;
 }
 
 .bio-image-name {
   display: inline;
-  padding: 5px 35px;
+  padding: 5px 45px;
   background: rgba(0, 0, 0, 0.8);
   border-radius: 5px;
   font-size: 1rem;
