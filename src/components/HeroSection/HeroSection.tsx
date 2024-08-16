@@ -70,6 +70,7 @@ const HeroSection: React.FC = () => {
           </div>
           <figure className="bio-card">
             <div className="bio-image-container">
+              <div className="color-image-filter"></div>
               <img className="bio-image" src={dolphinImage} alt="A Dolphin" />
               <div className="bio-image-name-container">
                 <figcaption className="bio-image-name">GOLDEN DEV</figcaption>
