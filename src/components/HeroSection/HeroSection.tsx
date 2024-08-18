@@ -75,6 +75,9 @@ const HeroSection: React.FC = () => {
               <div className="bio-image-name-container">
                 <figcaption className="bio-image-name">GOLDEN DEV</figcaption>
               </div>
+              <div className="bio-image-name-container-copy">
+                <figcaption className="bio-image-name">GOLDEN DEV</figcaption>
+              </div>
             </div>
           </figure>
         </div>

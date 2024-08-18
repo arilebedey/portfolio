@@ -128,32 +128,31 @@
 
 .bio-image-container {
   width: 330px;
-  height: 280px;
+  height: 300px;
   overflow: hidden;
   position: relative;
   border-radius: 10px;
   transition:
-    transform 0.6s ease,
-    height 0.6s ease;
-  transform-origin: top;
-  top: 190px;
+    transform 0.2s linear,
+    height 0.2s linear;
+  /* transform-origin: bottom; */
+  top: 120px;
 }
 
 .bio-image-container:hover {
   height: 330px;
-  transform: translateY(-50px);
+  /* transform: translateY(50px); */
   border-radius: 10px;
 }
 
 .color-image-filter {
   position: absolute;
-  overflow: hidden;
-  bottom: -350%;
-  left: -350%;
+  bottom: -290%;
+  left: -290%;
   width: 380%;
   height: 380%;
-  background: rgba(255, 0, 0, 0.5);
-  transform: skewX(45deg);
+  background: rgba(255, 0, 0, 0.4);
+  transform: skewX(-135deg);
   transform-origin: center;
   transition:
     bottom 0.6s linear,
@@ -162,24 +161,51 @@
 }
 
 .bio-image-container:hover .color-image-filter {
-  bottom: -150%;
-  left: -150%;
+  bottom: -185%;
+  left: -185%;
 }
 
 .bio-image {
   height: auto;
   width: 100%;
-  bottom: 0;
+  top: 0;
   position: absolute;
 }
 
 .bio-image-name-container {
+  color: var(--primary-color);
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: -30px;
+  /* bottom: -25px; */
+  top: 205px;
   width: auto;
   white-space: nowrap;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.bio-image-name-container-copy {
+  color: whitesmoke;
+  top: 235px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -25px;
+  width: auto;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.bio-image-container:hover .bio-image-name-container {
+  top: 205px;
+  opacity: 0;
+}
+
+.bio-image-container:hover .bio-image-name-container-copy {
+  position: absolute;
+  top: 235px;
+  opacity: 1;
 }
 
 .bio-image-name {
@@ -188,7 +214,6 @@
   background: rgba(0, 0, 0, 0.8);
   border-radius: 5px;
   font-size: 1rem;
-  color: var(--primary-color);
 }
 
 .second-line {
