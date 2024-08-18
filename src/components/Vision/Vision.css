@@ -53,30 +53,6 @@
   flex-direction: column;
 }
 
-.vision-button {
-  position: relative;
-  background-color: var(--button-color);
-  color: whitesmoke;
-  text-transform: uppercase;
-  font-family: "Play", sans-serif;
-  font-size: 1.5rem;
-  font-weight: 600;
-  text-decoration: none;
-  outline: none;
-  border: none;
-  padding: 1.4rem 9.1rem;
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 35px;
-  box-shadow:
-    0 0 0 8px #d9d9d9,
-    0 0 0 9px var(--button-color);
-}
-
-.vision-button:hover {
-  background: var(--background-color);
-}
-
 .vision-text-block {
   display: flex;
   font-family: "Play", sans-serif;
@@ -115,6 +91,10 @@
   margin-bottom: 72px;
 }
 
+.title:hover .vision-title-icon {
+  color: #737373;
+}
+
 /* NOTE: IMAGES PNG */
 
 .wolf-image {
@@ -136,8 +116,4 @@
   width: 190px;
   left: 0;
   bottom: 5px;
-}
-
-.title:hover .vision-title-icon {
-  color: #737373;
 }

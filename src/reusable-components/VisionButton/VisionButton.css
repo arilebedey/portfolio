@@ -1,0 +1,80 @@
+.vision-button-container {
+  display: flex;
+}
+
+.vision-button {
+  position: relative;
+  color: whitesmoke;
+  text-transform: uppercase;
+  font-family: "Play", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 1.8rem 9rem;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 35px;
+  z-index: 1;
+  border: none;
+  cursor: pointer;
+}
+
+.vision-button-bg--red-container {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  overflow: hidden;
+}
+
+.vision-button-bg--red {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: var(--button-color);
+  z-index: -2;
+}
+
+.vision-button-bg--red:after {
+  content: "";
+  position: absolute;
+  top: -350px;
+  left: -1010px;
+  width: 1000px;
+  height: 710px;
+  background: #404040;
+  z-index: -1;
+  transform: rotate(-45deg);
+  transition: all 0.5s ease;
+}
+
+.vision-button:hover .vision-button-bg--red::after {
+  left: 0%;
+}
+
+.vision-button-bg--grey {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  right: 2px;
+  bottom: 2px;
+  background-color: #d9d9d9;
+  z-index: -3;
+}
+
+.vision-button-bg--gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, #f18e8f, #df0002, #f18e8f);
+  z-index: -4;
+}
+
+.vision-button:hover .vision-button-bg--gradient {
+  background: linear-gradient(90deg, #f18e8f, #fdeeee, #df0002);
+}

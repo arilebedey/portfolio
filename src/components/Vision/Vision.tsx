@@ -5,6 +5,7 @@ import fireImage from "./fire.png";
 import faceImage from "./face.png";
 import ToysOutlinedIcon from "@mui/icons-material/ToysOutlined";
 import { SectionTitle } from "../../reusable-components/SectionTitle/SectionTitle";
+import { VisionButton } from "../../reusable-components/VisionButton/VisionButton";
 
 const Vision: React.FC = () => {
   return (
@@ -24,9 +25,7 @@ const Vision: React.FC = () => {
         </div>
         <div className="vision-details">
           <div className="reqs-and-res">
-            <button className="vision-button">
-              User Requirements and Research
-            </button>
+            <VisionButton>User Requirements and Research</VisionButton>
             <section className="vision-text-block">
               Understanding what business needs and giving them better solutions
               to
@@ -38,7 +37,7 @@ const Vision: React.FC = () => {
             </section>
           </div>
           <div className="technologies">
-            <button className="vision-button">modern technologies</button>
+            <VisionButton>modern technologies</VisionButton>
             <section className="vision-text-block">
               I utilize the latest front-end technologies to craft efficient and
               engaging web
@@ -54,7 +53,7 @@ const Vision: React.FC = () => {
           </div>
           <div className="two-detail-blocks">
             <div className="wireframing">
-              <button className="vision-button">wireframing</button>
+              <VisionButton>wireframing</VisionButton>
               <section className="vision-text-block-double">
                 Creating wireframes to define and plan the information hierarchy
                 of their design for a website, app, or product. Designing of
@@ -62,7 +61,7 @@ const Vision: React.FC = () => {
               </section>
             </div>
             <div className="implementation">
-              <button className="vision-button">Implementation</button>
+              <VisionButton>Implementation</VisionButton>
               <section className="vision-text-block-double">
                 Backend team builds server side functionality first and I
                 connect it with frontend components which will be provided by
@@ -71,7 +70,7 @@ const Vision: React.FC = () => {
             </div>
           </div>
           <div className="testing">
-            <button className="vision-button">testing</button>
+            <VisionButton>testing</VisionButton>
             <section className="vision-text-block">
               Testing the user interface of a website or other product to make
               sure everything functions as it should and that users understand
