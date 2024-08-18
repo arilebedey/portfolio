@@ -54,6 +54,7 @@
 }
 
 .vision-button {
+  position: relative;
   background-color: var(--button-color);
   color: whitesmoke;
   text-transform: uppercase;
@@ -70,6 +71,10 @@
   box-shadow:
     0 0 0 8px #d9d9d9,
     0 0 0 9px var(--button-color);
+}
+
+.vision-button:hover {
+  background: var(--background-color);
 }
 
 .vision-text-block {
