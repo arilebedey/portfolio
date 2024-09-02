@@ -1,9 +1,9 @@
 import React from "react";
 import "./About.css";
 import ToysOutlinedIcon from "@mui/icons-material/ToysOutlined";
-import { SectionTitle } from "../../reusable-components/SectionTitle/SectionTitle";
+import { SectionTitle } from "../../components/SectionTitle/SectionTitle";
 
-const About: React.FC = () => {
+export const About: React.FC = () => {
   return (
     <div className="about-container">
       <div className="about">
@@ -26,5 +26,3 @@ const About: React.FC = () => {
     </div>
   );
 };
-
-export default About;

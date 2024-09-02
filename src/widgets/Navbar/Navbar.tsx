@@ -3,7 +3,7 @@
 import React from "react";
 import "./Navbar.css";
 
-const Navbar: React.FC = () => {
+export const Navbar: React.FC = () => {
   return (
     <div className="navbar-container">
       <div className="navbar">
@@ -18,5 +18,3 @@ const Navbar: React.FC = () => {
     </div>
   );
 };
-
-export default Navbar;

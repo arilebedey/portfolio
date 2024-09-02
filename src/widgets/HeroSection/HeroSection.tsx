@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import "./HeroSection.css";
 import dolphinImage from "./dolphin2.webp";
 
-const HeroSection: React.FC = () => {
+export const HeroSection: React.FC = () => {
   const [emailCopied, setEmailCopied] = useState(false);
   const [phoneCopied, setPhoneCopied] = useState(false);
 

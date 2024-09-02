@@ -1,10 +1,10 @@
 // src/App.tsx
 import "./App.css";
 
-import Navbar from "./components/Navbar/Navbar";
-import HeroSection from "./components/HeroSection/HeroSection";
-import About from "./components/About/About";
-import Vision from "./components/Vision/Vision";
+import { Navbar } from "./widgets/Navbar";
+import { HeroSection } from "./widgets/HeroSection";
+import { About } from "./widgets/About";
+import { Vision } from "./widgets/Vision";
 
 function App() {
   return (

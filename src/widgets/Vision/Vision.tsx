@@ -4,10 +4,10 @@ import wolfImage from "./wolf.png";
 import fireImage from "./fire.png";
 import faceImage from "./face.png";
 import ToysOutlinedIcon from "@mui/icons-material/ToysOutlined";
-import { SectionTitle } from "../../reusable-components/SectionTitle/SectionTitle";
-import { VisionButton } from "../../reusable-components/VisionButton/VisionButton";
+import { SectionTitle } from "../../components/SectionTitle/SectionTitle";
+import { VisionButton } from "../../components/VisionButton/VisionButton";
 
-const Vision: React.FC = () => {
+export const Vision: React.FC = () => {
   return (
     <div className="vision-container">
       <div className="line-left vision-line"></div>
@@ -83,5 +83,3 @@ const Vision: React.FC = () => {
     </div>
   );
 };
-
-export default Vision;
